@@ -1,0 +1,29 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greeting Page</title>
+  <link rel="stylesheet" href="new.css">
+</head>
+<body>
+  <div class="container">
+    <input id="firstName" type="text" placeholder="First Name" >
+    <input id="lastName" type="text" placeholder="Last Name">
+    <button id="greetButton">Greet</button>
+    <h2 id="greeting" style="color: black;"></h2>
+  </div>
+
+  <script>
+    document.getElementById("greetButton").addEventListener("click",function(e){
+        e.preventDefault;
+        let input1 = document.getElementById("firstName").value 
+        let input2 = document.getElementById("lastName").value
+        let h2 = document.getElementById("greeting")
+        //
+        h2.textContent="hello "+ input1+" "+input2+" welcome to the team."
+    })
+  </script>
+</body>
+</html>
